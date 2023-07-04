@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F3 Module Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <div class="col" id="page_before_btnCick">
+        <h1>MY Public IP ADDRESS :</h1>
+        <button type="submit" id="btn_getData" style="padding: 10px 50px; border-radius: 10px; background-color: black; color:white">Get Data</button>
+    </div>
+
+    <!-- display page after clicking on get data button -->
+    <div id="page_after_btnCick" class="div-after" >
+        <div class="heading">
+            <h2 >MY Public IP ADDRESS :</h2>
+        </div>
+        <!-- lat long city name region name organization and host name -->
+        <div class="lat_city_host_name ">
+            <div clas="info-child">
+                <div id="latName">Lat:</div>
+                <div id="longName">Long:</div>
+            </div>
+            <div clas="info-child">
+                <div id="cityName">City:</div>
+                <div id="regionName">Region:</div>
+            </div>
+            <div clas="info-child">
+                <div id="orgName">Organization:</div>
+                <div id="hostName">Hostname:</div>
+            </div>
+        </div>
+        
+        <!-- embed the map on webpage -->
+        
+        <iframe id="map-location" src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" 
+        width="90%" height="470" frameborder="0" style="border:0; margin-top: 30px; margin-left: 100px;"></iframe>
+        
+        <!-- pincode information --date time timezone pincode message -->
+        <div class="pincode-info">
+            <div class="time-zone pincode-top-info">
+                <div id="time-zone">Time Zone:</div>
+            </div>
+            <div class="date-time pincode-top-info">
+                <div id="date-time">Date and Time:</div>
+            </div>
+            <div class="pincode pincode-top-info">
+                <div id="pin-code">Pincode:</div>
+            </div>
+            <div class="message pincode-top-info">
+                <div id="found-pincode-num">Message: </div>
+            </div>
+        </div>
+
+        
+        <div class="input-group mt-5 mb-3 input-filter">
+            <button id="btn-filter" class="material-icons">search </button>
+           
+            <input type="text" class="form-control" id="input-filt" placeholder="Filter" >
+          </div>
+
+        <!-- postoffice info card -->
+          <div class="parent">
+            
+                <!-- <div class="child ">
+                    <div class="name">Name</div>
+                    <div class="branch">Branch Type</div>
+                    <div class="name">Delivery Status</div>
+                    <div class="district">District</div>
+                    <div class="division">Division</div>
+                </div>
+                <div class="child ">
+                    <div class="name">Name</div>
+                    <div class="branch">Branch Type</div>
+                    <div class="name">Delivery Status</div>
+                    <div class="district">District</div>
+                    <div class="division">Division</div>
+                </div>
+                <div class="child ">
+                        <div class="name">Name</div>
+                        <div class="branch">Branch Type</div>
+                        <div class="name">Delivery Status</div>
+                        <div class="district">District</div>
+                        <div class="division">Division</div>
+                    </div>
+                    <div class="child ">
+                        <div class="name">Name</div>
+                        <div class="branch">Branch Type</div>
+                        <div class="name">Delivery Status</div>
+                        <div class="district">District</div>
+                        <div class="division">Division</div>
+                    </div>
+                <div class="child ">
+                        <div class="name">Name</div>
+                        <div class="branch">Branch Type</div>
+                        <div class="name">Delivery Status</div>
+                        <div class="district">District</div>
+                        <div class="division">Division</div>
+                    </div>
+                    <div class="child ">
+                        <div class="name">Name</div>
+                        <div class="branch">Branch Type</div>
+                        <div class="name">Delivery Status</div>
+                        <div class="district">District</div>
+                        <div class="division">Division</div>
+                    
+                </div>
+                 -->
+                
+            
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

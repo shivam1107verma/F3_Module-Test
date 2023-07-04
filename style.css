@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    margin-left: 100px;
+}
+
+#page_before_btnCick {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+.lat_city_host_name {
+    display: flex;
+    justify-content: space-between;
+    
+    width: 90%;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+#page_after_btnCick {
+    display: none;
+    margin-top: 40px;
+}
+
+.pincode-top-info {
+    margin-left: 100px;
+
+}
+
+.pincode-info {
+    margin-top: 60px;
+}
+
+.input-filter {
+    width: 88% !important;
+    margin-left: 7%;
+
+
+}
+
+#input-filt {
+    font-size: 22px;
+    border: 2px solid rgb(62, 62, 62);
+}
+
+.parent {
+
+    width: 90%;
+    font-size: 24px;
+
+    /* border: 2px solid red; */
+
+    margin-left: 100px;
+
+}
+
+.child {
+    float: left;
+    border: 2px solid rgb(89, 89, 90);
+    margin: 10px;
+    min-width: 48%;
+
+    padding: 1%;
+}
+
+.div-after {
+    font-size: 24px;
+}
+
+.info-child {
+    float: left;
+    margin: 10px;
+    min-width: 25%;
+    border: 2px solid blue;
+    padding: 2%;
+}
